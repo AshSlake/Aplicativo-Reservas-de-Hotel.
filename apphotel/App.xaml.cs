@@ -7,7 +7,7 @@ namespace apphotel
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.ContratacaoHospedagem());
+            MainPage = new NavigationPage(new Views.SobrePage());
         }
 
         protected override Window CreateWindow(IActivationState? activationState)

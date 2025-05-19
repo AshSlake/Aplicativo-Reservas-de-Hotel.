@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphotel.Views.SobrePage"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Gray500}">
+
+    <VerticalStackLayout
+        VerticalOptions="Center"
+        Padding="10">
+        <Label 
+            Text="Sobre o aplicativo"
+            TextColor="{StaticResource White}"
+            FontFamily="Kalam"
+            FontSize="50"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Frame Padding="10">
+            <VerticalStackLayout>
+                <Label
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    FontSize="20"
+                   Text="Desenvolvedor: Paulo Henrique"
+                   />
+                <Label 
+                    FontSize="15"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="Ano de desenvolvimento: 2025"/>
+                <Label 
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="Apicativo desenvolvido para gestão de hospedagem em hoteis."/>
+
+                <Button
+                    Margin="10"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="Voltar"/>
+
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
