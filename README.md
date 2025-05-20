@@ -1,6 +1,6 @@
 
 <div align="left" style="position: relative;">
-<img src="https://img.icons8.com/?size=512&id=55494&format=png" align="right" width="30%" style="margin: -20px 0 0 20px;">
+<img src="https://i.pinimg.com/736x/1d/f3/fd/1df3fd2e5d4f5187ba7019a0d3bb5503.jpg" align="right" width="30%" style="margin: -20px 0 0 20px;">
 <img
     alt="Star History Chart"
     src="https://readme-typing-svg.demolab.com?font=&weight=600&size=40&pause=1000&color=FFFFFF&center=true&vCenter=true&random=false&width=435&height=60&lines=APP+HOTEL+C+CHARP"
