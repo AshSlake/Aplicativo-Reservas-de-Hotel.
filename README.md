@@ -61,14 +61,5 @@ git push origin new-feature-x
 8. **Revisão**: Assim que seu PR for revisado e aprovado, ele será incorporado ao branch principal. Parabéns pela sua contribuição!
 </details>
 
-<details closed>
-<summary>Contributor Graph</summary>
-<br>
-<p align="left">
-   <a href="https://github.com{/AshSlake/Aplicativo-Reservas-de-Hotel..git/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=AshSlake/Aplicativo-Reservas-de-Hotel..git">
-   </a>
-</p>
-</details>
 
 
