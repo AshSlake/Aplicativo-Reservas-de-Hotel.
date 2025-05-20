@@ -1,43 +1,23 @@
+
+<div align="left" style="position: relative;">
+<img src="https://img.icons8.com/?size=512&id=55494&format=png" align="right" width="30%" style="margin: -20px 0 0 20px;">
 <img
     alt="Star History Chart"
     src="https://readme-typing-svg.demolab.com?font=&weight=600&size=40&pause=1000&color=FFFFFF&center=true&vCenter=true&random=false&width=435&height=60&lines=APP+HOTEL+C+CHARP"
   />
 
-
-<div align="left" style="position: relative;">
-<img src="https://img.icons8.com/?size=512&id=55494&format=png" align="right" width="30%" style="margin: -20px 0 0 20px;">
-<h1>APLICATIVO-RESERVAS-DE-HOTEL..GIT</h1>
 <p align="left">
 	<em><code>❯ REPLACE-ME</code></em>
 </p>
+
 <p align="left">
-	<img src="https://img.shields.io/github/license/AshSlake/Aplicativo-Reservas-de-Hotel..git?style=default&logo=opensourceinitiative&logoColor=white&color=09ff00" alt="license">
-	<img src="https://img.shields.io/github/last-commit/AshSlake/Aplicativo-Reservas-de-Hotel..git?style=default&logo=git&logoColor=white&color=09ff00" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/AshSlake/Aplicativo-Reservas-de-Hotel..git?style=default&color=09ff00" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/AshSlake/Aplicativo-Reservas-de-Hotel..git?style=default&color=09ff00" alt="repo-language-count">
-</p>
-<p align="left"><!-- default option, no dependency badges. -->
 </p>
 <p align="left">
-	<!-- default option, no dependency badges. -->
+	
 </p>
 </div>
 <br clear="right">
 
-## 🔗 Table of Contents
-
-
-- [📁 Project Structure](#-project-structure)
-  - [📂 Project Index](#-project-index)
-- [🚀 Getting Started](#-getting-started)
-  - [☑️ Prerequisites](#-prerequisites)
-  - [⚙️ Installation](#-installation)
-  - [🤖 Usage](#🤖-usage)
-  - [🧪 Testing](#🧪-testing)
-- [📌 Project Roadmap](#-project-roadmap)
-- [🔰 Contributing](#-contributing)
-- [🎗 License](#-license)
-- [🙌 Acknowledgments](#-acknowledgments)
 
 ---
 
