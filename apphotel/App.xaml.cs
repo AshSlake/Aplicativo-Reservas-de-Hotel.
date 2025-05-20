@@ -36,11 +36,35 @@ namespace apphotel
             }
         };
 
+        public List<Cidades> cidades = new List<Cidades>
+        {
+            new Cidades("Paris", "França"),
+            new Cidades("Londres", "Reino Unido"),
+            new Cidades("Nova York", "Estados Unidos"),
+            new Cidades("Tóquio", "Japão"),
+            new Cidades("Berlim", "Alemanha"),
+            new Cidades("Roma", "Itália"),
+            new Cidades("Madri", "Espanha"),
+            new Cidades("Lisboa", "Portugal"),
+            new Cidades("Toronto", "Canadá"),
+            new Cidades("Buenos Aires", "Argentina"),
+            new Cidades("Cidade do México", "México"),
+            new Cidades("Sydney", "Austrália"),
+            new Cidades("Pequim", "China"),
+            new Cidades("Seul", "Coreia do Sul"),
+            new Cidades("Cidade do Cabo", "África do Sul"),
+            new Cidades("Moscou", "Rússia"),
+            new Cidades("Amsterdã", "Países Baixos"),
+            new Cidades("Dubai", "Emirados Árabes Unidos"),
+            new Cidades("Bangkok", "Tailândia"),
+            new Cidades("Istambul", "Turquia")
+
+        };
         public App()
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.ContratacaoHospedagem());
+            MainPage = new NavigationPage(new Views.MainPage());
         }
 
         protected override Window CreateWindow(IActivationState? activationState)

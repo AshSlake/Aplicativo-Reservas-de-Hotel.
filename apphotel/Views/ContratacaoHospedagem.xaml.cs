@@ -6,10 +6,15 @@ public partial class ContratacaoHospedagem : ContentPage
     // referencia á instância principal do aplicativo, para acessar propriedades globais
     App propriedadesDoApp;
 
-    public ContratacaoHospedagem()
-	{
+    // data recebida da MainPage
+    private DateTime dataRecebida;
+
+    public ContratacaoHospedagem(DateTime data)
+    {
         //inicia os componentes visuais do XAML.
         InitializeComponent();
+
+        dataRecebida = data;
 
         if (Application.Current == null) //Verifica se a instancia da aplicação atual é nula.
         {
@@ -27,6 +32,9 @@ public partial class ContratacaoHospedagem : ContentPage
         // defini a data maxima do datePicker
         dtpck_checkIn.MaximumDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month + 1, DateTime.Now.Day);
 
+        //defini a data passada da MainPage
+        dtpck_checkIn.Date = dataRecebida;
+
         // Define a data mínima de check-out como um dia após o check-in selecionado
         dtpck_checkOut.MinimumDate = dtpck_checkIn.Date.AddDays(1);
         // Define a data máxima de check-out como até 6 meses após o check-in
@@ -34,12 +42,13 @@ public partial class ContratacaoHospedagem : ContentPage
     }
 
     private void Button_Clicked(object sender, EventArgs e)
-        //logica do botão avançar da View de contratação.
+    //logica do botão avançar da View de contratação.
     {
         try
-            {
+        {
             Navigation.PushAsync(new HospedagemContratada());
-        } catch (Exception ex)
+        }
+        catch (Exception ex)
         {
 
             DisplayAlert("OPS", ex.Message, "OK");
@@ -55,6 +64,20 @@ public partial class ContratacaoHospedagem : ContentPage
 
         dtpck_checkOut.MinimumDate = data_selecionada.AddDays(1);
         dtpck_checkOut.MaximumDate = data_selecionada.AddMonths(6);
+
+    }
+
+    private void Button_Clicked_1(object sender, EventArgs e)
+    {
+
+        try
+        {
+            Navigation.PopAsync();
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("OPS", ex.Message, "OK");
+        }
 
     }
 }

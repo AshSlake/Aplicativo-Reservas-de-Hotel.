@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphotel.Views.MainPage"
+             BackgroundColor="{StaticResource BackGround}">
+    <VerticalStackLayout VerticalOptions="Center">
+
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+            <Image Source="logo.png"/>
+            <Label Text="plann.er" FontSize="35" FontFamily="Kalam"/>
+        </HorizontalStackLayout>
+
+        <Grid>
+            <Image
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"
+                 Source="bg.png"/>
+            <VerticalStackLayout Spacing="30" VerticalOptions="Center" HorizontalOptions="Center">
+
+                <Label 
+                     Text="Convide seus amigos e planeje sua próxima viagem!"
+                     FontFamily="Kalam"
+                     HorizontalOptions="Center"
+                     HorizontalTextAlignment="Center"
+                     LineBreakMode="WordWrap"
+                     FontSize="16"
+                     WidthRequest="300"/>
+                <Frame 
+                    BackgroundColor="{StaticResource Secondary}"
+                    Margin="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Picker 
+                                ItemDisplayBinding="{Binding cidadeFormatada}"
+                                x:Name="picker_cidade"
+                                FontFamily="Kalam"
+                                Title="Selecione a cidade!"/>
+                    
+                        <HorizontalStackLayout Spacing="10">
+                           
+                            <DatePicker
+                                FontFamily="Kalam"
+                                x:Name="dtpck_checkIn" 
+                                Format="dd/mm/yyyy"/>
+                            <Label 
+                                 FontFamily="Kalam"
+                                 VerticalOptions="Center"
+                                 FontSize="20"
+                                 Text="Quando?"/>
+                        </HorizontalStackLayout>
+                        
+                        <Button 
+                            Clicked="Button_Clicked"
+                            FontFamily="Kalam"
+                            Text="Continuar"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Label
+                    Text="Ao planejar sua viagem pela plann.er você automaticamente concorda com nossos termos de uso e políticas de privacidade."
+                    FontFamily="Kalam"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    LineBreakMode="WordWrap"
+                    WidthRequest="350"/>
+            </VerticalStackLayout>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
