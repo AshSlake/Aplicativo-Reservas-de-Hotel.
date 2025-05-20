@@ -64,6 +64,7 @@
                 <Picker
                     x:Name="pck_quarto"
                     Title="Selecione Sua acomodação"
+                    ItemDisplayBinding="{Binding descricao}"
                     />
 
                 <Frame
@@ -76,6 +77,7 @@
                             <Label Text="Check-in:"/>
                             <DatePicker 
                                         x:Name="dtpck_checkIn"
+                                        DateSelected="dtpck_checkIn_DateSelected"
                                         Format="dd/mm/yyyy"/>
                         </HorizontalStackLayout>
 
@@ -87,7 +89,12 @@
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Frame>
-                    
+
+                <Button 
+                    Text="Avançar"
+                    Clicked="Button_Clicked"
+                    />
+
             </VerticalStackLayout>
         </Frame>
     </VerticalStackLayout>
