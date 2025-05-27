@@ -1,3 +1,5 @@
+using apphotel.Models;
+
 namespace apphotel.Views;
 
 // classe parcial que representa a pagina de contratação de hospedagem da aplicação.
@@ -41,17 +43,28 @@ public partial class ContratacaoHospedagem : ContentPage
         dtpck_checkOut.MaximumDate = dtpck_checkIn.Date.AddMonths(6);
     }
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private async void Button_Clicked(object sender, EventArgs e)
     //logica do botão avançar da View de contratação.
     {
         try
         {
-            Navigation.PushAsync(new HospedagemContratada());
+            // instancia a classe Hospedagem e cria um objeto hospedagem com os dados selecionados do ususario.
+            Hospedagem hospedagem = new Hospedagem((Quarto)pck_quarto.SelectedItem,
+                Convert.ToInt32(stp_adultos.Value),
+                Convert.ToInt32(stp_crianca.Value),
+                dtpck_checkIn.Date,
+                dtpck_checkOut.Date);
+
+            await Navigation.PushAsync(new HospedagemContratada()
+            {
+                // passa o objeto hospedagem para a próxima página.
+                BindingContext = hospedagem
+            });
         }
         catch (Exception ex)
         {
 
-            DisplayAlert("OPS", ex.Message, "OK");
+            await DisplayAlert("OPS", ex.Message, "OK");
         }
     }
 

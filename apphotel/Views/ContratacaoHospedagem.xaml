@@ -5,7 +5,7 @@
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource BackGround}">
-             
+
     <VerticalStackLayout
         VerticalOptions="Center"
         Padding="10">
@@ -13,34 +13,34 @@
             Text="Cálculo da Diária"
             TextColor="{StaticResource Primary}"
             FontFamily="Kalam"
-            FontSize="50"
+            FontSize="45"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Frame Padding="10" BackgroundColor="{StaticResource Secondary}">
-            <VerticalStackLayout>
+            <VerticalStackLayout Spacing="5">
                 <Grid ColumnDefinitions="*, *, 2*" RowDefinitions="Auto, Auto">
-                    
+
                     <Label 
                         FontSize="15"
                         FontFamily="Kalam"
                         Grid.Row="0" 
                         Grid.Column="0" 
                         Text="Adultos:"/>
-                    
+
                     <Label 
                         FontFamily="Kalam"
                         Grid.Row="0" 
                         Grid.Column="1" 
                         Text="{Binding Value}"
                         BindingContext="{x:Reference stp_adultos}"/>
-                    
+
                     <Stepper Grid.Row="0" 
                              Grid.Column="2"
                              x:Name="stp_adultos"
                              Minimum="0"
                              Maximum="10"
                              Increment="1"/>
-                    
+
                     <Label 
                         FontSize="15"
                         FontFamily="Kalam"
@@ -65,30 +65,36 @@
                 </Grid>
 
                 <Label
+                  
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="Escolha sua Suite:"
                     TextColor="{StaticResource Primary}"
                     FontSize="25"
                     FontFamily="Kalam"
-                    Text="Escolha sua Suite:"/>
+                   />
 
-                <Picker
-                    
-                    x:Name="pck_quarto"
-                    Title="Selecione Sua acomodação"
-                    ItemDisplayBinding="{Binding descricao}"
+                <Frame>
+                    <Picker
+                         x:Name="pck_quarto"
+                         Title="Selecione Sua acomodação"
+                         SelectedIndex="1"
+                         ItemDisplayBinding="{Binding descricao}"
                     />
+                </Frame>
 
-                <Frame
-                    Padding="10"
-                    Margin="10">
-
+                <Frame >
                     <VerticalStackLayout Spacing="10">
-                        
-                        <Label 
+
+                        <Label
+                            HorizontalOptions="Center"
                             FontSize="20"
                             FontFamily="Kalam"
                             Text="Periodo da Estadia:"/>
-                        
-                        <HorizontalStackLayout Spacing="20">
+
+                        <HorizontalStackLayout
+                            HorizontalOptions="Center"
+                            Spacing="20">
                             <Label 
                                 VerticalOptions="Center"
                                 FontFamily="Kalam"
@@ -99,7 +105,9 @@
                                         Format="dd/mm/yyyy"/>
                         </HorizontalStackLayout>
 
-                        <HorizontalStackLayout Spacing="10">
+                        <HorizontalStackLayout 
+                            HorizontalOptions="Center"
+                            Spacing="10">
                             <Label 
                                 VerticalOptions="Center"
                                 FontFamily="Kalam"
@@ -108,12 +116,12 @@
                                 x:Name="dtpck_checkOut"
                                 Format="dd/mm/yyyy"/>
                         </HorizontalStackLayout>
-                        
+
                     </VerticalStackLayout>
                 </Frame>
 
                 <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
-                   
+
                     <Button
                          Text="Voltar"
                          Clicked="Button_Clicked_1"/>
@@ -124,9 +132,9 @@
 />
 
                 </HorizontalStackLayout>
-                    
 
-               
+
+
 
             </VerticalStackLayout>
         </Frame>

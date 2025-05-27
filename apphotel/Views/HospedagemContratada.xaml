@@ -7,29 +7,29 @@
              >
     <VerticalStackLayout VerticalOptions="Center">
 
-        <Label Text="Suite Super Luxo"
+        <Label Text="{Binding quartoSelecioando.descricao}"
                TextColor="{StaticResource Primary}"
                FontFamily="Kalam"
-               FontSize="50"
+               FontSize="Title"
                HorizontalTextAlignment="Center"/>
 
         <Frame
             Margin="10">
             <HorizontalStackLayout Spacing="10">
-                <HorizontalStackLayout >
+                <HorizontalStackLayout Spacing="5">
                     <Label 
                         Text="Adultos:"/>
                     <Label
-                        Text="2"
+                        Text="{Binding quantidadeAdultos}"
                         TextColor="{StaticResource Primary}"/>
 
                 </HorizontalStackLayout>
 
-                <HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="5">
                     <Label 
                         Text="Crianças:"/>
                     <Label
-                        Text="1"
+                        Text="{Binding quantidadeCriancas}"
                         TextColor="{StaticResource Primary}"/>
                 </HorizontalStackLayout>
             </HorizontalStackLayout>
@@ -42,17 +42,17 @@
                 <Label Grid.Row="0" Grid.Column="1" Text="Chek-Out"/>
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia"/>
 
-                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024"/>
-                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024"/>
-                <Label Grid.Row="1" Grid.Column="2" Text="3"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="{Binding dataformatadaChekIn}" TextColor="{StaticResource Primary}"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding dataformatadaCheckOut}" TextColor="{StaticResource Primary}"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="{Binding diasEstadia}" TextColor="{StaticResource Primary}"/>
 
             </Grid>
         </Frame>
 
         <Frame Margin="10">
             <HorizontalStackLayout Spacing="10">
-                <Label Text="Valor Tototal:"/>
-                <Label TextColor="{StaticResource Primary}" Text="R$ 580,00"/>
+                <Label Text="Valor Total:"/>
+                <Label TextColor="{StaticResource Primary}" Text="{Binding valorTotalAcomodacao}"/>
             </HorizontalStackLayout>
         </Frame>
 
