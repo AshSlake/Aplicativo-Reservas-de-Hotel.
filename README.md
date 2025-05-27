@@ -6,7 +6,7 @@
     src="https://readme-typing-svg.demolab.com?font=&weight=600&size=40&pause=1000&color=FFFFFF&center=true&vCenter=true&random=false&width=435&height=60&lines=APP+HOTEL+C+CHARP"
   />
 <p align="left">
-	Aplicativo propoe melhorar e agilizar a reserva de hoteis durante a busca de viagens para o usuario e seus amigos.
+	Aplicativo desenvolvido No Curso de Desenvolvimento de Sistemas 2°MODULO, visando a criação de um aplicativo de calculo de diarias em hoteis.
 </p>
 
 </div>
